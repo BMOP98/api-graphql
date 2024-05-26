@@ -13,12 +13,12 @@ const startServer = async () => {
 
   mongoose.connect('mongodb+srv://maximo98:BMOPpineda1@cluster0.gqrlqzi.mongodb.net/');
 
-  app.listen({ port: process.env.PORT || 4000 }, () =>
+  app.listen({ port: 5000 }, () =>
     console.log(`Server ready at`)
   );
 
   app.use(express.static(path.join(__dirname, '../client')));
-  
+
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client', 'public/index.html'));
   });
