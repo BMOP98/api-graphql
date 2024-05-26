@@ -17,13 +17,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "18"
-      - name: Install dependencies
-        run: npm install
       - name: Install client dependencies
         working-directory: client
         run: npm install
       - name: Install server dependencies
         working-directory: server
+        run: npm install
+      - name: Install dependencies
         run: npm install
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
