@@ -4,7 +4,7 @@ import UserTable from './components/UserTable';
 import AddUserForm from './components/AddUserForm';
 
 const client = new ApolloClient({
-  uri: 'https://appgraphql-da63ee9c61ec.herokuapp.com/graphql',
+  uri: 'http://appgraphql-da63ee9c61ec.herokuapp.com/graphql',
   cache: new InMemoryCache()
 });
 
