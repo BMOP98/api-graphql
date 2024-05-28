@@ -26,7 +26,7 @@ const startServer = async () => {
     res.sendFile(path.join(__dirname, '../client', 'public/index.html'));
   });
 
-  app.listen({ port: process.env.PORT || 4000 }, () =>
+  app.listen({ port: 4000 }, () =>
     console.log(`Server ready at `)
   );
 
